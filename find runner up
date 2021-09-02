@@ -1,0 +1,9 @@
+n=int(input())
+vals = list(map(int,input().split()))
+m = max(vals)
+while True:
+    try:
+        vals.remove(m)
+    except ValueError:
+            break
+print(max(vals))
