@@ -1,0 +1,16 @@
+n=int(input("enter hou many names u will enter"))
+list=[]
+marks=[]
+for i in range (n):
+    name=input("enter the name")
+    mark=float(input('enter the score'))
+    list.append([name,mark])
+    marks.append(mark)
+grade=sorted(set(marks))
+new=[]
+for i in list:
+    if grade[1]==i[1]:
+        new.append(i[0])
+ak=sorted(new)
+for i  in ak:
+    print(i)
