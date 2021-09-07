@@ -6,3 +6,4 @@
 4)  find a string
 5)  what's your name
 6)  mutations
+7)  lists
