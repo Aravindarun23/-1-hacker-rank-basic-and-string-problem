@@ -9,3 +9,4 @@
 7)  lists
 8)  tuple
 9)  string validator
+10)  text allignment
