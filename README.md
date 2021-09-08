@@ -11,3 +11,4 @@
 9)  string validator
 10)  text allignment
 11)  sWAP cASE
+12)  text wrap
