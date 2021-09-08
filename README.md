@@ -10,3 +10,4 @@
 8)  tuple
 9)  string validator
 10)  text allignment
+11)  sWAP cASE
