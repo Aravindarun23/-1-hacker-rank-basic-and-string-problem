@@ -1,0 +1,36 @@
+Sample Input
+
+5
+
+Sample Output
+
+--------e--------
+------e-d-e------
+----e-d-c-d-e----
+--e-d-c-b-c-d-e--
+e-d-c-b-a-b-c-d-e
+--e-d-c-b-c-d-e--
+----e-d-c-d-e----
+------e-d-e------
+--------e--------
+
+
+
+
+
+ANSWER:
+
+def print_rangoli(ar):
+    l1=list(map(chr,range(97,123)))
+    s=l1[ar-1::-1]+l1[1:ar]
+    width=len("-".join(s))
+    for i in range(1,ar):
+        print("-".join(l1[ar-1:ar-i:-1]+l1[ar-i:ar]).center(width,"-"))
+    for i in range(ar,0,-1):
+        print("-".join(l1[ar-1:ar-i:-1]+l1[ar-i:ar]).center(width,"-"))
+    
+
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
