@@ -20,7 +20,7 @@ e-d-c-b-a-b-c-d-e
 
 ANSWER:
 
-def print_rangoli(ar):
+def print_rangoli(ar):    
     l1=list(map(chr,range(97,123)))
     s=l1[ar-1::-1]+l1[1:ar]
     width=len("-".join(s))
@@ -34,3 +34,21 @@ def print_rangoli(ar):
 if __name__ == '__main__':
     n = int(input())
     print_rangoli(n)
+   
+   
+   
+   
+   
+another way:::
+
+import string
+n=int(input())
+data = string.ascii_lowercase
+l=[]
+for i in range(n):
+    s="-".join(data[i:n])
+    l.append((s[::-1]+s[1:]).center(4*n-3,"-"))       #formula for all values
+for i in l[::-1]:
+    print(i)
+for f in l[1:]:
+    print(f)
