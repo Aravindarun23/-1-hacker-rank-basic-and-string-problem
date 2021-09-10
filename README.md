@@ -13,3 +13,4 @@
 11)  sWAP cASE
 12)  text wrap
 13)  designer door mat
+14)  string formatting
