@@ -1,0 +1,32 @@
+Sample Input
+
+STDIN       Function
+-----       --------
+AABCAAADA   s = 'AABCAAADA'
+3           k = 3
+
+Sample Output
+
+AB
+CA
+AD
+
+
+
+ANSWER:
+
+
+import textwrap
+s,k=input(),int(input())
+v=textwrap.fill(s,k).split("\n")                                                ** first time i solved a 40 mark problem in hackerrank without any reference **
+num=len(v)
+ans=""
+for a in range(num):
+    for i in v[a]:
+        for e in i:
+            if e not in ans:
+                ans=ans+e
+    print(ans)
+    ans=ans.replace(ans,"")
+    
+
