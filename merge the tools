@@ -13,7 +13,35 @@ AD
 
 
 
-ANSWER:
+ANSWER: 
+
+
+def merge_the_tools(string, k):
+    import textwrap
+
+    v=textwrap.fill(string,k).split("\n")
+    num=len(v)
+    ans=""
+    for a in range(num):
+        for i in v[a]:
+            for e in i:
+                if e not in ans:
+                    ans=ans+e
+        print(ans)
+        ans=ans.replace(ans,"")
+    
+
+    # your code goes here
+
+if _name_ == '_main_':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
+
+
+
+
+my answer::# not in function
+
 
 
 import textwrap
