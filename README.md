@@ -17,4 +17,4 @@
 15)  alphabet rangoli
 16)  capitalie
 17)  list comprehnsion
-18)  
+18)  merge the tools  
