@@ -24,9 +24,10 @@ def merge_the_tools(string, k):
     ans=""
     for a in range(num):
         for i in v[a]:
-            for e in i:
-                if e not in ans:
-                    ans=ans+e
+            if e not in ans:
+                ans=ans+e
+            
+              
         print(ans)
         ans=ans.replace(ans,"")
     
@@ -51,9 +52,8 @@ num=len(v)
 ans=""
 for a in range(num):
     for i in v[a]:
-        for e in i:
-            if e not in ans:
-                ans=ans+e
+        if e not in ans:
+            ans=ans+e
     print(ans)
     ans=ans.replace(ans,"")
     
